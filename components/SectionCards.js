@@ -2,7 +2,7 @@ import Card from './Card';
 
 const SectionCards = () => {
   return (
-    <section className="py-10">
+    <section className="py-10 md:pt-16 md:pb-32">
       <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-7 lg:gap-10">
         <Card
           title="Modular"
