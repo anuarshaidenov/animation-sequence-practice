@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Header />
-      <main className="w-[95%] max-w-5xl mx-auto py-32">
+      <main className="w-[95%] max-w-6xl mx-auto">
         <Component {...pageProps} />
       </main>
     </>
