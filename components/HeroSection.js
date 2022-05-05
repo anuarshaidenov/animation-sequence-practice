@@ -1,7 +1,7 @@
 const HeroSection = () => {
   return (
     <section className="md:flex md:items-end md:justify-between md:gap-20 py-12 md:py-32">
-      <h1 className="font-merri font-bold text-3xl text-center md:text-5xl md:text-left mb-10 md:mb-0 max-w-lg">
+      <h1 className="font-merri font-bold text-3xl text-center md:text-5xl md:text-left mb-10 mx-auto md:mx-0 md:mb-0 max-w-lg md:leading-tight">
         A Teaching Platform with Flexibility, Finally.
       </h1>
       <form className="md:grow">
@@ -14,7 +14,10 @@ const HeroSection = () => {
             placeholder="Email address"
             type="email"
           />
-          <button className="bg-purple-600 rounded py-5 px-9" type="submit">
+          <button
+            className="bg-purple-600 rounded py-5 px-3 md:px-9"
+            type="submit"
+          >
             Add me
           </button>
         </div>
