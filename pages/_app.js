@@ -1,10 +1,14 @@
+import Header from '../components/Header';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <main>
-      <Component {...pageProps} />
-    </main>
+    <>
+      <Header />
+      <main className="w-[95%] max-w-5xl mx-auto py-32">
+        <Component {...pageProps} />
+      </main>
+    </>
   );
 }
 
