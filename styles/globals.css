@@ -9,5 +9,12 @@ body {
 }
 
 .card::before {
-  @apply absolute -left-1 top-0 content-[''] w-6 h-6 bg-purple-500 rounded-full border-8 border-zinc-900 -translate-x-2;
+  @apply absolute -left-1 top-0 content-[''] w-6 h-6 bg-purple-500 rounded-full border-8 border-zinc-900 -translate-x-2 opacity-0;
+  transform: translateY(100px);
+}
+
+@layer utilities {
+  .clip-path {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
 }

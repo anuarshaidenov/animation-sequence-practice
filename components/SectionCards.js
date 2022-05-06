@@ -1,8 +1,10 @@
+import { forwardRef } from 'react';
+
 import Card from './Card';
 
-const SectionCards = () => {
+const SectionCards = forwardRef((_, ref) => {
   return (
-    <section className="py-10 md:pt-16 md:pb-32">
+    <section className="py-10 md:pt-16 md:pb-32" ref={ref}>
       <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-7 lg:gap-10">
         <Card
           title="Modular"
@@ -24,6 +26,7 @@ const SectionCards = () => {
       </ul>
     </section>
   );
-};
+});
 
+SectionCards.displayName = 'SectionCards';
 export default SectionCards;
